@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/tailwind-output.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/fancybox.css" />
+  <title>About</title>
+</head>
+
+<body data-aether-auto>
+  <header
+    class="fixed top-0 w-full z-navbar border-b border-primary bg-primary/80 backdrop-blur-xl h-navbar flex items-center">
+    <div class="aether-container flex items-center justify-between">
+      <a href="index.html" class="flex items-center"><img src="assets/images/HDQTLCLNGGAKMKD.svg" loading="eager"
+          fetchpriority="high" alt="Logo" class="max-xl:scale-75" /></a>
+      <nav class="flex items-center gap-5">
+        <div class="hidden xl:flex items-center gap-5">
+          <a href="index.html"
+            class="px-3 py-2 inline-flex items-center text-sm font-medium text-primary hover:text-primary-interactive hover:underline transition-colors duration-300 uppercase">Home</a><a
+            href="about.html"
+            class="px-3 py-2 inline-flex items-center text-sm font-medium text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300 uppercase">About</a><a
+            href="products.html"
+            class="px-3 py-2 inline-flex items-center text-sm font-medium text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300 uppercase">Products</a><a
+            href="media.html"
+            class="px-3 py-2 inline-flex items-center text-sm font-medium text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300 uppercase">Media</a><a
+            href="contact.html"
+            class="px-3 py-2 inline-flex items-center text-sm font-medium text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300 uppercase">Contact
+            Us</a>
+        </div>
+        <button id="theme-toggle-btn"
+          class="size-8 p-2 flex items-center justify-center rounded-full cursor-pointer hover:bg-tertiary-interactive text-primary hover:text-primary-interactive transition-colors duration-300">
+          <i data-aether-icon="sun" id="icon-sun" class="size-full"></i><i data-aether-icon="moon" id="icon-moon"
+            class="size-full"></i></button><button data-aether-trigger="ui-control" data-aether-target="offcanvas"
+          class="size-8 p-2 flex items-center justify-center rounded-full cursor-pointer hover:bg-tertiary-interactive text-primary hover:text-primary-interactive transition-colors duration-300">
+          <i data-aether-icon="menu" class="size-full"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div id="offcanvas" data-aether-scroll-lock data-aether-click-outside data-aether-focus-trap
+    class="hidden fixed inset-0 z-popup flex justify-end">
+    <div class="absolute inset-0 bg-primary/50 backdrop-blur-xl" data-aether-trigger="ui-control"
+      data-aether-target="offcanvas"></div>
+    <div
+      class="relative w-full sm:max-w-[450px] h-full xl:border-l border-primary bg-primary/80 backdrop-blur-xl shadow-2xl flex flex-col">
+      <div class="px-aether-container-gap sm:px-3 h-navbar border-b border-primary flex items-center justify-between">
+        <a href="index.html" class="flex items-center"><img src="assets/images/HDQTLCLNGGAKMKD.svg" loading="lazy"
+            alt="Logo" class="scale-75" /></a><button data-aether-trigger="ui-control" data-aether-target="offcanvas"
+          class="size-8 p-1 flex items-center justify-center rounded-full cursor-pointer hover:bg-tertiary-interactive text-primary hover:text-primary-interactive transition-colors duration-300">
+          <i data-aether-icon="close" class="size-full"></i>
+        </button>
+      </div>
+      <div class="flex-1 overflow-y-auto p-5 space-y-6 no-scrollbar">
+        <div class="space-y-1">
+          <div class="text-[10px] font-bold text-tertiary uppercase tracking-wider px-2 mb-2">
+            Navigation
+          </div>
+          <a href="index.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Home</span></a><a href="about.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Corporate</span></a>
+          <div data-aether-ui="accordion-group">
+            <button data-aether-trigger="accordion" data-aether-target="offcanvas-products-menu"
+              class="w-full justify-between flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer group">
+              <span class="text-sm font-medium">Products</span><i data-aether-icon="down-chevron"
+                class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform"></i>
+            </button>
+            <div id="offcanvas-products-menu" data-aether-ui="accordion-panel">
+              <div class="pl-10 pr-2 py-1 space-y-1 border-l border-primary ml-5">
+                <a href="products.html"
+                  class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">Test Product 1</a><a
+                  href="products.html"
+                  class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">Test Product 2</a><a
+                  href="products.html"
+                  class="block py-1.5 text-sm text-secondary hover:text-primary transition-colors">Test Product 3</a>
+              </div>
+            </div>
+          </div>
+          <a href="media.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Media</span></a><a href="contact.html"
+            class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-tertiary-interactive/50 text-secondary hover:text-secondary-interactive transition-colors duration-300 cursor-pointer"><span
+              class="text-sm font-medium">Contact Us</span></a>
+        </div>
+      </div>
+      <div class="p-5 border-t border-primary space-y-4">
+        <div data-aether-ui="accordion-group">
+          <button data-aether-trigger="accordion" data-aether-target="offcanvas-language"
+            class="w-full flex items-center cursor-pointer justify-between px-3 py-2 rounded-lg border border-primary hover:border-primary-interactive bg-transparent text-sm text-secondary hover:text-secondary-interactive group transition-colors">
+            <div class="flex items-center gap-2">
+              <img src="assets/flags/gb.svg" loading="lazy" alt="en"
+                class="size-5 rounded-full border border-primary" /><span class="font-medium uppercase">en</span>
+            </div>
+            <i data-aether-icon="down-chevron"
+              class="size-4 text-xs fill-current text-tertiary group-aria-expanded:rotate-180 transition-transform"></i>
+          </button>
+          <div id="offcanvas-language" data-aether-ui="accordion-panel">
+            <div class="pl-10 pr-2 py-1 space-y-1 border-l border-primary ml-5 mt-1">
+              <a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="assets/flags/de.svg" loading="lazy" alt="en"
+                  class="size-5 rounded-full border border-primary" /><span
+                  class="font-medium uppercase">de</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="assets/flags/es.svg" loading="lazy" alt="en"
+                  class="size-5 rounded-full border border-primary" /><span
+                  class="font-medium uppercase">es</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="assets/flags/fr.svg" loading="lazy" alt="en"
+                  class="size-5 rounded-full border border-primary" /><span
+                  class="font-medium uppercase">fr</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="assets/flags/tr.svg" loading="lazy" alt="tr"
+                  class="size-5 rounded-full border border-primary" /><span
+                  class="font-medium uppercase">tr</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="assets/flags/ru.svg" loading="lazy" alt="en"
+                  class="size-5 rounded-full border border-primary" /><span
+                  class="font-medium uppercase">ru</span></a><a href="#"
+                class="flex items-center gap-2 py-1.5 text-sm text-secondary hover:text-secondary-interactive transition-colors"><img
+                  src="assets/flags/sa.svg" loading="lazy" alt="en"
+                  class="size-5 rounded-full border border-primary" /><span class="font-medium uppercase">ar</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-navbar"></div>
+  <section class="w-full">
+    <div class="relative w-full aether-section-gap">
+      <img src="assets/images/JIIYDWWRKOMURTN.webp" loading="eager" fetchpriority="high" alt="Banner"
+        class="absolute w-full h-full inset-0 object-cover" />
+      <div class="absolute w-full h-full inset-0 bg-black/20 backdrop-blur-xs"></div>
+      <div
+        class="aether-container aether-section-gap relative w-full flex flex-col gap-2.5 sm:gap-5 items-center justify-center text-center">
+        <i data-aether-icon="menu"
+          class="text-primary/20 not-dark:text-white/20 w-6 sm:w-12 h-6 sm:h-12 transform rotate-90"></i>
+        <p class="subtitle-primary not-dark:text-white/50 aether-text-tracking">
+          The Future of Light
+        </p>
+        <h2 class="title-primary not-dark:text-white">
+          In Pamir, It is being designed.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <div class="aether-section-gap"></div>
+  <section class="aether-container">
+    <p class="text-secondary sm:text-lg text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+      laudantium, obcaecati facilis at quo quaerat fugit non temporibus illo
+      aliquid repellendus quam dolor commodi expedita nobis necessitatibus,
+      provident sit ipsum incidunt dignissimos in voluptas similique alias
+      asperiores. Labore quisquam provident debitis ex at neque, repellat
+      aperiam, voluptatum cupiditate sint enim!<br /><br />Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Accusamus pariatur dicta
+      quibusdam, eligendi deserunt molestiae ex hic, laboriosam aspernatur
+      sunt odio. Corrupti provident iste ipsam ullam architecto saepe
+      voluptatibus id natus harum aliquam quam animi nemo dolorum veritatis
+      nulla enim, maiores autem, maxime repellendus, beatae necessitatibus.
+      Incidunt, neque dolore molestias ut reprehenderit cupiditate dignissimos
+      itaque fuga eos eveniet blanditiis voluptatibus et, ea tempore culpa
+      unde voluptas, corrupti modi ratione quam?
+    </p>
+  </section>
+  <div class="aether-section-gap"></div>
+  <section class="aether-container">
+    <div class="grid grid-cols-2 lg:grid-cols-4 w-full justify-items-center text-center">
+      <div class="counter-box relative p-4 md:p-8 xl:p-12 flex flex-col gap-2 items-center w-full">
+        <div class="size-8 md:size-10 xl:size-12 text-accent md:mb-2">
+          <i data-aether-icon="alarm"></i>
+        </div>
+        <p class="title-secondary leading-none">45+</p>
+        <p class="subtitle-secondary">Years of experience</p>
+      </div>
+      <div class="counter-box relative p-4 md:p-8 xl:p-12 flex flex-col gap-2 items-center w-full">
+        <div class="size-8 md:size-10 xl:size-12 text-accent md:mb-2">
+          <i data-aether-icon="user-group"></i>
+        </div>
+        <p class="title-secondary leading-none">100+</p>
+        <p class="subtitle-secondary">Expert Team</p>
+      </div>
+      <div class="counter-box relative p-4 md:p-8 xl:p-12 flex flex-col gap-2 items-center w-full">
+        <div class="size-8 md:size-10 xl:size-12 text-accent md:mb-2">
+          <i data-aether-icon="chart"></i>
+        </div>
+        <p class="title-secondary leading-none">500+</p>
+        <p class="subtitle-secondary">Product Range</p>
+      </div>
+      <div class="counter-box relative p-4 md:p-8 xl:p-12 flex flex-col gap-2 items-center w-full">
+        <div class="size-8 md:size-10 xl:size-12 text-accent md:mb-2">
+          <i data-aether-icon="share"></i>
+        </div>
+        <p class="title-secondary leading-none">750+</p>
+        <p class="subtitle-secondary">Project</p>
+      </div>
+    </div>
+  </section>
+  <div class="aether-section-gap"></div>
+  <section class="aether-container">
+    <div class="flex w-full justify-center overflow-hidden">
+      <i data-aether-icon="custom-1" class="text-tertiary/50"></i>
+    </div>
+  </section>
+  <div class="aether-section-gap"></div>
+  <section class="aether-container">
+    <div class="flex w-full justify-center overflow-hidden">
+      <img src="assets/images/SJWFYDABGWYUSKZ.webp" alt="Image" loading="lazy" class="sm:max-w-[50%]" />
+    </div>
+  </section>
+  <div class="aether-section-gap"></div>
+  <section class="aether-container">
+    <div class="flex flex-col w-full gap-5 2xl:gap-10">
+      <div class="text-center max-xl:w-full flex flex-col gap-2">
+        <p class="subtitle-primary aether-text-tracking text-accent">
+          Illuminating You
+        </p>
+        <h2 class="title-primary">Powerful Solutions</h2>
+      </div>
+      <div class="flex gap-5 xl:gap-10">
+        <img src="assets/images/TWJYHJKSVKMBMIS.svg" alt="Logo" loading="lazy"
+          class="max-md:hidden w-24 xl:w-36 h-24 xl:h-36" />
+        <p class="text-secondary sm:text-lg max-sm:text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis
+          aspernatur dolorem accusantium, alias molestias dolor quisquam
+          voluptatum sunt quam et iure optio cumque harum quod voluptate
+          adipisci quasi, suscipit eos beatae doloribus velit aut? Sit, qui!
+          Rem voluptatum molestias vero distinctio at ex ad? Provident
+          cupiditate dolor recusandae laudantium, fugit voluptatibus eum
+          numquam laborum et culpa hic deserunt. Quam corrupti fugiat
+          laudantium sequi soluta veniam eum in, doloribus expedita eligendi
+          iste adipisci beatae eaque deleniti ex ad et repudiandae.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="aether-section-gap"></div>
+  <section class="aether-container">
+    <div class="border border-primary rounded-2xl flex flex-col">
+      <div class="relative flex flex-col p-aether-container-gap mx-auto">
+        <p class="text-tertiary lg:text-xl aether-text-tracking">
+          ✧ Since 1986, Unmatched
+        </p>
+        <p
+          class="font-semibold aether-text-faded uppercase text-[80px] sm:text-[120px] md:text-[140px] lg:text-[200px] xl:text-[260px] 2xl:text-[320px] leading-none">
+          Quality
+        </p>
+        <img src="assets/images/MQJJMJUNHVGMXEO.webp" loading="lazy" alt="Image"
+          class="max-xl:hidden absolute z-10 -bottom-3/12 inset-x-0 pointer-events-none select-none cursor-default" />
+      </div>
+      <div
+        class="xl:pt-[calc((var(--aether-container-gap)*2)+5rem)] rounded-b-2xl bg-secondary p-aether-container-gap w-full flex flex-col xl:flex-row gap-5 relative xl:items-end">
+        <div class="flex flex-col gap-2">
+          <p class="subtitle-primary aether-text-tracking text-accent">
+            Our Unchanging Philosophy
+          </p>
+          <h2 class="title-primary">Our Quality Certifications</h2>
+        </div>
+        <div class="relative w-full">
+          <div
+            class="flex flex-col gap-2 w-full xl:absolute xl:-bottom-[calc(var(--aether-container-gap)*2)] xl:left-0 min-w-0">
+            <div class="max-sm:hidden w-full flex justify-end items-center gap-2">
+              <button
+                class="certificate-prev border border-primary rounded-md aspect-square p-3 size-12 cursor-pointer text-primary hover:text-primary-interactive hover:border-primary-interactive transition-all duration-300 active:scale-95">
+                <i data-aether-icon="left-arrow" class="size-full"></i></button><button
+                class="certificate-next border border-primary rounded-md aspect-square p-3 size-12 cursor-pointer text-primary hover:text-primary-interactive hover:border-primary-interactive transition-all duration-300 active:scale-95">
+                <i data-aether-icon="right-arrow" class="size-full"></i>
+              </button>
+            </div>
+            <div class="swiper swiperCertificates w-full">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img src="assets/images/TRFDDFVNKDHCNJY.webp" loading="lazy" alt="Certificate"
+                      class="object-cover w-full aspect-[3/4] border border-primary" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="assets/images/TRFDDFVNKDHCNJY.webp" loading="lazy" alt="Certificate"
+                      class="object-cover w-full aspect-[3/4] border border-primary" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="assets/images/TRFDDFVNKDHCNJY.webp" loading="lazy" alt="Certificate"
+                      class="object-cover w-full aspect-[3/4] border border-primary" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="assets/images/TRFDDFVNKDHCNJY.webp" loading="lazy" alt="Certificate"
+                      class="object-cover w-full aspect-[3/4] border border-primary" /></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#"><img src="assets/images/TRFDDFVNKDHCNJY.webp" loading="lazy" alt="Certificate"
+                      class="object-cover w-full aspect-[3/4] border border-primary" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="aether-section-gap"></div>
+  <section class="w-full bg-secondary">
+    <div class="aether-container aether-section-gap flex flex-col xl:flex-row justify-between gap-5">
+      <div class="flex flex-col gap-2">
+        <p class="subtitle-primary aether-text-tracking text-accent">
+          Guided by Integrity
+        </p>
+        <h2 class="title-primary">Our Ethical Framework.</h2>
+      </div>
+      <div class="grid grid-cols-12 gap-4 sm:gap-6 w-full justify-items-center">
+        <div class="col-span-12 md:col-span-6 size-full">
+          <a href="#"
+            class="flex w-full h-full justify-between items-center p-5 bg-tertiary gap-2.5 cursor-pointer group hover:bg-tertiary-interactive transition-colors duration-300">
+            <h3 class="title-tertiary group-hover:text-primary-interactive transition-colors duration-300">
+              Our Ethical Management
+            </h3>
+            <i data-aether-icon="right-arrow"
+              class="transform -rotate-45 size-8 md:size-12 text-primary hover:text-primary-interactive group-hover:rotate-0 transition-all duration-300"></i>
+          </a>
+        </div>
+        <div class="col-span-12 md:col-span-6 size-full">
+          <a href="#"
+            class="flex w-full h-full justify-between items-center p-5 bg-tertiary gap-2.5 cursor-pointer group hover:bg-tertiary-interactive transition-colors duration-300">
+            <h3 class="title-tertiary group-hover:text-primary-interactive transition-colors duration-300">
+              Our Ethical Principles
+            </h3>
+            <i data-aether-icon="right-arrow"
+              class="transform -rotate-45 size-8 md:size-12 text-primary hover:text-primary-interactive group-hover:rotate-0 transition-all duration-300"></i>
+          </a>
+        </div>
+        <div class="col-span-12 md:col-span-6 size-full">
+          <a href="#"
+            class="flex w-full h-full justify-between items-center p-5 bg-tertiary gap-2.5 cursor-pointer group hover:bg-tertiary-interactive transition-colors duration-300">
+            <h3 class="title-tertiary group-hover:text-primary-interactive transition-colors duration-300">
+              Our Registration Certificates
+            </h3>
+            <i data-aether-icon="right-arrow"
+              class="transform -rotate-45 size-8 md:size-12 text-primary hover:text-primary-interactive group-hover:rotate-0 transition-all duration-300"></i>
+          </a>
+        </div>
+        <div class="col-span-12 md:col-span-6 size-full">
+          <a href="#"
+            class="flex w-full h-full justify-between items-center p-5 bg-tertiary gap-2.5 cursor-pointer group hover:bg-tertiary-interactive transition-colors duration-300">
+            <h3 class="title-tertiary group-hover:text-primary-interactive transition-colors duration-300">
+              Our responsibilities
+            </h3>
+            <i data-aether-icon="right-arrow"
+              class="transform -rotate-45 size-8 md:size-12 text-primary hover:text-primary-interactive group-hover:rotate-0 transition-all duration-300"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="aether-section-gap"></div>
+  <footer class="aether-container relative overflow-hidden">
+    <div class="flex flex-col lg:flex-row gap-3 justify-between items-center w-full">
+      <a href="index.html" class="flex items-center"><img src="assets/images/HDQTLCLNGGAKMKD.svg" loading="lazy"
+          alt="Logo" class="max-xl:scale-75" /></a>
+      <div class="flex items-center w-fit gap-2">
+        <a href="#"
+          class="size-8 sm:size-10 p-0.5 sm:p-1 rounded-full text-secondary hover:bg-tertiary-interactive hover:text-secondary-interactive transition-colors duration-300"><i
+            data-aether-icon="instagram" class="size-full"></i></a><a href="#"
+          class="size-8 sm:size-10 p-0.5 sm:p-1 rounded-full text-secondary hover:bg-tertiary-interactive hover:text-secondary-interactive transition-colors duration-300"><i
+            data-aether-icon="twitter" class="size-full"></i></a><a href="#"
+          class="size-8 sm:size-10 p-0.5 sm:p-1 rounded-full text-secondary hover:bg-tertiary-interactive hover:text-secondary-interactive transition-colors duration-300"><i
+            data-aether-icon="whatsapp" class="size-full"></i></a>
+      </div>
+    </div>
+    <div class="flex w-full flex-wrap gap-10 items-start justify-between border-y border-primary py-16 my-8">
+      <div
+        class="w-fit xl:max-w-[400px] flex flex-col gap-5 max-xl:mb-5 max-xl:mx-auto max-xl:text-center max-xl:justify-center max-xl:items-center">
+        <p class="text-secondary">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus,
+          assumenda nobis! Explicabo accusantium dolorum ullam debitis,
+          molestias perspiciatis iste inventore esse atque mollitia dolorem
+          corporis!
+        </p>
+        <a href="#" class="max-xl:hidden btn-1 text-accent border-accent/50 aether-text-tracking">Corporate<i
+            data-aether-icon="right-arrow" class="size-5"></i></a>
+      </div>
+      <div class="w-fit flex flex-col gap-4">
+        <h4 class="text-primary font-semibold sm:text-lg">Company</h4>
+        <div class="flex flex-col gap-2 xl:gap-3.5">
+          <a href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">About
+            Us</a><a href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Our
+            Story</a><a href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Careers</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Leadership</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Contact
+            Us Us</a>
+        </div>
+      </div>
+      <div class="w-fit flex flex-col gap-4">
+        <h4 class="text-primary font-semibold sm:text-lg">Product</h4>
+        <div class="flex flex-col gap-2 xl:gap-3.5">
+          <a href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Features</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Pricing</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Integrations</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Enterprise</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Changelog</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Roadmap</a>
+        </div>
+      </div>
+      <div class="w-fit flex flex-col gap-4">
+        <h4 class="text-primary font-semibold sm:text-lg">Resources</h4>
+        <div class="flex flex-col gap-2 xl:gap-3.5">
+          <a href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Documentation</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Help
+            Center</a><a href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Community</a><a
+            href="#"
+            class="max-sm:text-sm text-secondary hover:text-secondary-interactive hover:underline transition-colors duration-300">Case
+            Studies</a>
+        </div>
+      </div>
+      <div class="w-fit flex flex-col gap-4">
+        <h4 class="text-primary font-semibold sm:text-lg">Address</h4>
+        <div class="flex flex-col gap-2 xl:gap-3.5 max-w-[250px]">
+          <p class="max-sm:text-sm text-secondary hover:text-tertiary-interactive transition-colors duration-300">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Aspernatur, nobis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap w-full items-center justify-between mb-8 border-t border-primary/10">
+      <p class="text-tertiary text-sm">© 2025 All Rights Reserved.</p>
+    </div>
+  </footer>
+  <button id="back-to-top" title="Back to Top"
+    class="fixed bottom-5 right-5 z-50 size-10 p-2 xl:size-14 xl:p-4 cursor-pointer rounded-full border border-primary hover:border-primary-interactive bg-tertiary hover:bg-tertiary-interactive text-secondary hover:text-secondary-interactive translate-y-20 opacity-0 invisible transition-all duration-300 hover:-translate-y-1 focus:outline-none active:scale-95"
+    aria-label="Back to Top">
+    <i data-aether-icon="up-arrow" class="size-full"></i>
+  </button>
+  <script src="js/aether.js"></script>
+  <script src="js/aether-icons.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
